@@ -425,7 +425,7 @@ The 'Max Subsequence Sum' problem is the task of finding a contiguous subsequenc
  				thisSum += a[k];
  			}
  
- 			if (thisSum  maxSum) {
+ 			if (thisSum < maxSum) {
  				maxSum = thisSum;
  			}
  		}
@@ -444,7 +444,7 @@ The 'Max Subsequence Sum' problem is the task of finding a contiguous subsequenc
  		for (int j = i; j < a.size(); ++j) {
  			thisSum += a[j];
  
- 			if (thisSum  maxSum) {
+ 			if (thisSum < maxSum) {
  				maxSum = thisSum;
  			}
  		}
@@ -470,7 +470,7 @@ The 'Max Subsequence Sum' problem is the task of finding a contiguous subsequenc
              min_index = i;
          }
          
-         if(sum - min_sum  max_sum){
+         if(sum - min_sum < max_sum){
              max_sum = sum - min_sum;
              max_start = min_index + 1;
              max_end = i + 1;
