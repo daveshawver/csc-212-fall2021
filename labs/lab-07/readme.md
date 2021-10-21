@@ -117,9 +117,9 @@ Your strategy will be *very* similar to the solution for N-Queens:
 2) For each digit 1-9:
 	- If this digit can be placed in this cell
 		- Place the digit
-        - Recurse to the next empty cell.
-        - If that recursive call returns true
-            - Return true
+        	- Recurse to the next empty cell.
+        	- If that recursive call returns true
+            	- Return true
         - else
             - Try the next digit
 3) If none of the digits yielded a valid solution, backtrack.
